@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be replaced.
+  </div>
+
+  <script>
+    // Incorrect use of innerHTML with a null value
+    document.getElementById("myDiv").innerHTML = null; 
+  </script>
+</body>
+</html>
